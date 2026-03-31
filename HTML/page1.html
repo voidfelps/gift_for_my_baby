@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="pokedex-body">
+        
+        <div class="pokedex-top-lights">
+            <div class="light-big-blue"></div>
+            <div class="light-small-group">
+                <div class="light-small red"></div>
+                <div class="light-small yellow"></div>
+                <div class="light-small green"></div>
+            </div>
+        </div>
+
+        <div class="pokedex-screen">
+            <div class="container-pokedex">
+                <h1 class="main-header">PICK A POKÉMON</h1>
+                
+                <div class="pkmn-starters-gallery" id="pokemon-list"></div>
+
+                <a href="../index.html" class="pkmn-link">BACK</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="oak-modal" class="modal-overlay">
+        <div class="fire-red-box">
+            <div class="oak-layout">
+                <img src="../assets/Professor_Oak29Sprite.webp" class="oak-sprite">
+                <div class="message-bubble">
+                    <p id="oak-text"></p>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button id="confirm-selection" class="pkmn-link-wide">I CHOOSE YOU!</button>
+                <button onclick="closeOak()" class="close-btn">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="final-modal" class="modal-overlay">
+    <div class="fire-red-box final-card">
+        <div class="final-content">
+            <img id="final-pkmn-gif" src="" class="final-sprite">
+            
+            <div class="final-message">
+                <h2>EXCELLENT CHOICE!</h2>
+                <div class="message-scroll-container">
+                    <div id="dynamic-message" class="message-content">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <a href="page1.html" class="pkmn-link-wide">CONTINUE JOURNEY</a>
+    </div>
+</div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
