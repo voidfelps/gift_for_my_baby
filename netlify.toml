@@ -4,6 +4,11 @@
   status = 200
 
 [[redirects]]
+  from = "/*/*"
+  to = "/"
+  status = 200
+
+[[redirects]]
   from = "/pokemessages"
   to = "/HTML/page1.html"
   status = 200
