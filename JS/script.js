@@ -12,7 +12,7 @@ const pokedex = [
 
 const pokemonMessages = {
     "Pikachu": "You shine just like Pikachu, I'm so grateful to have you in my life baby! ♡",
-    "Eevee": "Just like Eevee, you have so many wonderful possibilities. I love every version of you! ♡",
+    "Eevee": "Just like Eevee, you have so many perfect possibilities and I love every one of them bae! ♡",
     "Gengar": "You stole my heart faster than Gengar steals a soul! Take care of it sweetie! ♡",
     "Jigglypuff": "You're as sweet as a serenade written by Jigglypuff sweetie! I love you! ♡",
     "Espeon": "You're ethereal and graceful just like Espeon. You're such a cutiekat baby! ♡",
