@@ -664,7 +664,7 @@ body {
 }
 
 .final-message h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'VT323', monospace;
     font-size: 1.2rem;
     color: #ff4d4d;
     margin-bottom: 15px;
