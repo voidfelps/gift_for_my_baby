@@ -540,3 +540,27 @@ function togglePlayer() {
     const playerBar = document.getElementById('player-controls');
     playerBar.classList.toggle('minimized');
 }
+
+// Função para mudar de "página"
+function navegar(path) {
+    window.history.pushState({}, "", path);
+    carregarConteudo(path);
+}
+
+// Lógica para carregar o conteúdo baseado na URL
+function carregarConteudo(path) {
+    const mainContent = document.getElementById('main-container'); // Onde seu conteúdo aparece
+    
+    if (path === '/pokedex') {
+        // Esconde a home, mostra as mensagens do Pikachu/Eevee
+        document.getElementById('home-screen').style.display = 'none';
+        document.getElementById('poke-screen').style.display = 'block';
+    } else {
+        // Volta para a home
+        document.getElementById('home-screen').style.display = 'block';
+        document.getElementById('poke-screen').style.display = 'none';
+    }
+}
+
+// Escuta o botão "Voltar" do navegador
+window.onpopstate = () => carregarConteudo(window.location.pathname);
