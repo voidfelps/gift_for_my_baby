@@ -9,6 +9,14 @@
     font-family:'VT323', monospace;
 }
 
+body, p, h1, h2, button {
+    font-family: 'VT323', monospace !important;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     /* background-color: #f0f0f0; Fundo cinza claro clássico */
     background-image: url('../assets/blackspace.gif');
