@@ -541,26 +541,26 @@ function togglePlayer() {
     playerBar.classList.toggle('minimized');
 }
 
-// Função para mudar de "página"
-function navegar(path) {
-    window.history.pushState({}, "", path);
-    carregarConteudo(path);
-}
+function navegarPara(pagina) {
+    // 1. Lógica para mostrar/esconder as divs das páginas (você provavelmente já tem)
+    showPage(pagina); 
 
-// Lógica para carregar o conteúdo baseado na URL
-function carregarConteudo(path) {
-    const mainContent = document.getElementById('main-container'); // Onde seu conteúdo aparece
-    
-    if (path === '/pokedex') {
-        // Esconde a home, mostra as mensagens do Pikachu/Eevee
-        document.getElementById('home-screen').style.display = 'none';
-        document.getElementById('poke-screen').style.display = 'block';
-    } else {
-        // Volta para a home
-        document.getElementById('home-screen').style.display = 'block';
-        document.getElementById('poke-screen').style.display = 'none';
+    // 2. Lógica para mudar o Título da Aba
+    switch(pagina) {
+        case 'messages':
+            document.title = "Pokémessages | For My Baby ♡";
+            window.history.pushState({}, "", "/pokemessages");
+            break;
+        case 'memories':
+            document.title = "Pokémemories | Our Journey";
+            window.history.pushState({}, "", "/pokememories");
+            break;
+        case 'music':
+            document.title = "Pokémusic | Jukebox";
+            window.history.pushState({}, "", "/pokemusic");
+            break;
+        default:
+            document.title = "I LOVE U BABY"; // Nome da Home
+            window.history.pushState({}, "", "/");
     }
 }
-
-// Escuta o botão "Voltar" do navegador
-window.onpopstate = () => carregarConteudo(window.location.pathname);
