@@ -393,7 +393,31 @@ const jukeboxData = {
         color: "#6089ea",
         pokeId: 143,
         lyrics: "Heaven can wait... ♡"
-    }
+    },
+    "song10": { 
+        title: "Apocalypse",
+        artist: "Cigarretes After Sex",
+        file: "../assets/music/apocalypse.mp3",
+        color: "#4b4e55",
+        pokeId: 153,
+        lyrics: "Heaven can wait... ♡"
+    },
+    "song11": { 
+        title: "Tuyo",
+        artist: "Rodrigo Amarante",
+        file: "../assets/music/tuyo.mp3",
+        color: "#cb602b",
+        pokeId: 162,
+        lyrics: "Heaven can wait... ♡"
+    },
+    "song12": { 
+        title: "Antonia's Song",
+        artist: "Gondwana",
+        file: "../assets/music/antonia.mp3",
+        color: "#bfffa6",
+        pokeId: 282,
+        lyrics: "Heaven can wait... ♡"
+    },
 };
 
 const songKeys = Object.keys(jukeboxData);
