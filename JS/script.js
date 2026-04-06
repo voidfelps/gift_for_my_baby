@@ -371,9 +371,9 @@ const jukeboxData = {
         lyrics: "Heaven can wait... ♡"
     },
     "song7": { 
-        title: "Lover You Should've Come Over",
-        artist: "Jeff Buckley",
-        file: "../assets/music/loveryoushouldhavecomeover.m4a",
+        title: "Sweet",
+        artist: "Cigarretes After Sex",
+        file: "../assets/music/sweet.mp3",
         color: "#ff7ff6",
         pokeId: 151,
         lyrics: "Heaven can wait... ♡"
