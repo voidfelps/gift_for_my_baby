@@ -398,7 +398,7 @@ const jukeboxData = {
         title: "Heavenly",
         artist: "Cigarretes After Sex",
         file: "../assets/music/heavenly.mp3",
-        color: "#4b4e55",
+        color: "#00b74f",
         pokeId: 153,
         lyrics: "Heaven can wait... ♡"
     },
