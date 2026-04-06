@@ -380,7 +380,7 @@ const jukeboxData = {
     },
     "song8": { 
         title: "Strangers in the Night",
-        artist: "Deftones",
+        artist: "Frank Sinatra",
         file: "../assets/music/strangersinthenight.m4a",
         color: "#e4d500",
         pokeId: 25,
